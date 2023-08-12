@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Woodmart Test</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+        </script>
+  </head>
+  <body>
+    <!-- Header - Start -->
+    <!-- Header - Top - Start -->
+    <div class="top-bar bg-primary text-light"">
+        <div class="container-lg d-lg-flex justify-content-between h-100">
+
+            <!-- Menu - Left -->
+            <div class="d-flex d-none d-lg-block topbar" style="font-size: 12px; height: 42px;">
+                
+                <!-- Left Navigation -->
+                <nav class="navbar navbar-expand-lg py-0 d-none d-lg-block py-1 h-100">
+                    <ul id="topnav-left" class="navbar-nav align-items-center h-100 align-middle">
+                    <!-- Select Lang -->
+                      <li class="nav-item dropdown border-start border-white border-opacity-25 h-100" >
+                        <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown" aria-expanded="false" >
+                            ENGLISH
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                          <li><a class="dropdown-item" href="#">French</a></li>
+                          <li><a class="dropdown-item" href="#">Requires WPML plugin</a></li>
+                        </ul>
+                      </li>
+                      <!-- Select Country -->
+                      <li class="nav-item dropdown border-start border-end border-white border-opacity-25 h-100">
+                        <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            COUNTRY
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">United States (USD)</a></li>
+                          <li><a class="dropdown-item" href="#">Deutschland (EUR)</a></li>
+                          <li><a class="dropdown-item" href="#">Japan (JPY)</a></li>
+                        </ul>
+                      </li>
+                    <!-- Mesaj -->
+                    <div class="align-self-center ps-2 p-0 d-none d-lg-block" >
+                        <strong>
+                            FREE SHIPPING FOR ALL ORDERS OF $150
+                        </strong>
+                    </div>
+                </nav>
+            </div>
+
+            
+            <!-- Menu - Right -->
+            <div class="d-flex justify-content-center h-100" style="font-size: 12px;">
+
+                <!-- Social Icons -->
+                <div class="align-self-center d-flex align-items-center" style="font-size: 14px;  height: 38px;">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter ms-3"></i>
+                    <i class="fa-brands fa-instagram ms-3"></i>
+                    <i class="fa-brands fa-youtube ms-3"></i>
+                    <i class="fa-brands fa-pinterest ms-3"></i>
+                </div>
+
+                <!-- Right Navigation -->
+                <nav class="navbar navbar-expand-lg py-0 d-none d-lg-block ms-3">
+                    <ul class="navbar-nav">
+                    <!-- Select Lang -->
+                      <li class="nav-item border-start border-white border-opacity-25 py-1" >
+                        <a class="nav-link text-light" href="#" >
+                            <i class="fa-regular fa-envelope me-1" style="font-size: 14px;"></i> NEWSLETTER
+                        </a>
+                      </li>
+                     
+                      <li class="nav-item border-start border-white border-opacity-25 py-1" >
+                        <a class="nav-link text-light" href="#" >
+                            CONTACT US
+                        </a>
+                      </li>
+                      
+                      <li class="nav-item border-start border-end border-white border-opacity-25 py-1" >
+                        <a class="nav-link text-light" href="#" >
+                            FAQS
+                        </a>
+                      </li>
+                </nav>
+            </div>
+        </div>
+    </div> <!-- Header - Top - End -->
+
+    <!-- Header - Middle - Start -->
+    <div class="container-lg">
+
+        <!-- Large View - Start -->
+        <div class="d-none d-lg-block">
+            <div class="d-flex align-items-center" style="height: 105px;"">
+
+                <!-- Logo - Start -->
+                <div class="" style="width: 275px;">
+                    <a href="#" class="">
+                        <img src="https://a6n4d3q9.rocketcdn.me/wp-content/themes/woodmart/images/wood-logo-dark.svg"   width="370" height="50" alt="WoodMart" style="max-width: 245px;">	
+                    </a>
+                </div> <!-- Logo - End -->
+
+                <!-- SearchBar - Start -->
+                <div class="col me-3">
+
+                    <div class="input-group border border-2 p-1 ">
+                      <input type="text" 
+                        class="form-control shadow-none searchbar selectpicker customSelect" 
+                        aria-label="Text input with dropdown button" 
+                        placeholder="Search for products"
+                        style="border: 0;"
+                        >
+                      <button class="btn dropdown-toggle border-0  text-black text-opacity-50 border-start border-end" type="button"    data-bs-toggle="dropdown" aria-expanded="false">
+                        SELECT CATEGORY
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Clocks</a></li>
+                        <li><a class="dropdown-item" href="#">Lighting</a></li>
+                        <li><a class="dropdown-item" href="#">Furniture</a></li>
+                        <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        <li><a class="dropdown-item" href="#">Cooking</a></li>
+                        <li><a class="dropdown-item" href="#">Toys</a></li>
+                        <li><a class="dropdown-item" href="#">Other</a></li>
+                      </ul>
+                      <div class="input-group-text bg-transparent border-0 ms-1">
+                        <i class="fa-solid fa-magnifying-glass text-black text-opacity-25 fs-5"></i>
+                      </div>
+                    </div>
+                </div> <!-- SearchBar - End -->
+
+                <!-- Right Col - Start -->
+                <div class="d-inline-flex" >
+                    <div><a class="btn" href=""  style="font-weight: 600;">LOGIN/REGISTER</a></div>
+                    <div><a class="btn"><i class="fs-4 fa-regular fa-heart fs-"></i></a></div>
+                    <button type="button" class="btn position-relative d-flex">
+                        <i class="fs-4 fa-solid fa-shuffle"></i>
+                        <span class="position-absolute top-0 start-0 ms-4 badge rounded-pill bg-primary">
+                          0
+                        </span>
+                    </button>
+                    <button type="button" class="btn position-relative d-flex">
+                        <i class="fs-4 fa-solid fa-basket-shopping "></i>
+                        <span class="position-absolute top-0 start-0 ms-4 badge rounded-pill bg-primary">
+                          0
+                        </span>
+                        <span id="basket-total-prices" class="ms-3" style="font-weight: 600;">₺0.00</span>
+                    </button>
+                </div><!-- Right Col - End -->
+
+            </div> 
+        </div><!-- Large View - End -->
+
+        <!-- XSmall View - Start -->
+        <div class="d-block d-lg-none">
+            <div class="position-relative d-flex align-items-center" style="height: 60px;"">
+                
+                <!-- Menu - Start - (XS View) -->
+                <nav class="navbar">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler border-0 fs-6 shadow-none" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        MENU
+                      </button>
+                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"aria-labelledby="offcanvasNavbarLabel">
+                        
+                        <!-- SearchBar -->
+                        <div class="offcanvas-header">
+                            <input type="text" 
+                              class="form-control shadow-none searchbar selectpicker customSelect" 
+                              aria-label="Text input with dropdown button" 
+                              placeholder="Search for products"
+                              style="border: 0;"
+                              >
+                            <div class="input-group-text bg-transparent border-0 ms-1">
+                              <i class="fa-solid fa-magnifying-glass text-black text-opacity-25 fs-5"></i>
+                            </div>
+                        </div>
+                        <!-- Menus -->
+                        <div class="offcanvas-body p-0">
+                                <div role="tabpanel">
+                                    <!-- List group -->
+                                    <ul class="nav nav-underline text-center nav-fill bg-secondary" style="--bs-bg-opacity: .2;">
+                                        <li class="nav-item">
+                                            <a class="nav-link link-secondary active" data-bs-toggle="list" href="#menu" role="tab">MENU</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link link-secondary" data-bs-toggle="list" href="#categories" role="tab">CATEGORIES</a>
+                                        </li>
+                                    </ul>
+                        
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                      <div class="tab-pane active" id="menu" role="tabpanel">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">HOME</a></li>
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">DEMOS</a></li>
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">SHOP</a></li>
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">BLOG</a></li>
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">PORTFOLIO</a></li>
+                                            <li class="list-group-item">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item border-0">
+                                                      <span class="accordion-header">
+                                                        <button class="accordion-button bg-transparent shadow-none py-2 px-3"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        PAGES
+                                                        </button>
+                                                      </span>
+                                                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body  py-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item"><a class="btn d-flex" href="#" role="button">Pre-Built Pages</a></li>
+                                                                <li class="list-group-item"><a class="btn d-flex" href="#" role="button">Pre-Built Layouts</a></li>
+                                                            </ul>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a class="btn d-flex align-items-center" href="#" role="button">
+                                                    <i class="fa-regular fa-heart me-2"></i>
+                                                    WISHLIST
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a class="btn d-flex align-items-center" href="#" role="button">
+                                                    <i class="fa-solid fa-shuffle me-2"></i>
+                                                    COMPARE
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a class="btn d-flex align-items-center" href="#" role="button">
+                                                    <i class="fa-regular fa-user me-2"></i>
+                                                    LOGIN/REGISTER
+                                                </a>
+                                            </li>
+                                          </ul>
+                                      </div>
+                                      <div class="tab-pane" id="categories" role="tabpanel">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">FURNITURE</a></li>
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">LIGHTING</a></li>
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">ACCESSORIES</a></li>
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">CLOCKS</a></li>
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">COOKING</a></li>
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">ELECTRONICS</a></li>
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">MINIMALISM</a></li>
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">FASHION</a></li>
+                                            <li class="list-group-item"><a class="btn d-flex" href="#" role="button">TOYS</a></li>
+                                          </ul>
+                        
+                                      </div>
+                                    </div>
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                </nav> <!-- Menu - End - (XS View) -->
+
+                <!-- Logo - Start - (XS View) -->
+                <div class="position-absolute top-50 start-50 translate-middle text-center" style="width: 199px;">
+                    <a href="#" class="wd-logo wd-main-logo" rel="home">
+                        <img src="https://a6n4d3q9.rocketcdn.me/wp-content/themes/woodmart/images/wood-logo-dark.svg" width="179"   height="50" alt="WoodMart" style="max-width: 245px;">	
+                    </a>
+                </div> <!-- Logo - End - (XS View)  -->
+                
+                <!-- Basket - Start -->
+                <div class="position-absolute top-50 end-0 translate-middle">
+                    <button type="button" class="btn position-relative d-flex">
+                        <i class="fs-4 fa-solid fa-basket-shopping"></i>
+                        <span class="position-absolute top-0 start-0 ms-4 badge rounded-pill bg-primary">
+                          0
+                        </span>
+                    </button>
+                </div> <!-- Basket - End -->
+            </div>
+        </div><!-- XSmall View - End -->
+        
+    </div> <!-- Header - Middle - End -->
+
+    <hr class="m-0 border-1 border-secondary">
+    
+    <!-- Header - Bottom - Start -->
+    <div class="container-lg d-none d-lg-block">
+        <div class="row m-0" style="height: 54px;" >
+
+            <!-- Left Area - Browse -->
+            <div class="col-2 bg-primary bg-dark p-0" style="width: 270px;">
+                <div class="left-menu-item text-light h-100">
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="ms-2"><strong>BROWSE CATEGORIES</strong></span>
+                    <i class="fa-solid fa-chevron-down ms-auto small"></i>
+                </div>
+                <div id="left-menu" class="dropdown w-100 z-3">
+                    <ul class="dropdown-menu d-block m-0 w-100 rounded-0 p-0 border-0">
+                      <li class="nav-item subnav">
+                        <div class="left-menu-item h-100">
+                            <i class="fa-solid fa-chair"></i>
+                            <a class="dropdown-item subnav-link" aria-current="page" href="#">Furniture</a>
+                            <i class="fa-solid fa-chevron-right ms-auto small"></i>
+                            <div class="sidenav-container border-top m-0 p-0 h-100" style="width: 825px;">
+                                <div class="row p-5 pb-0">
+                                    <div class="col">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/menu-product-1-118x118.jpg">
+                                        <h6 class="text-uppercase mt-4"><strong>Clocks</strong></h6>
+                                        <ul class="lh-lg ps-0" style="list-style: none;">
+                                            <li><a href="" class="list-link">Lorem, ipsum.</a></li>
+                                            <li><a href="" class="list-link">Voluptatum, tenetur.</a></li>
+                                            <li><a href="" class="list-link">Adipisci, eveniet.</a></li>
+                                            <li><a href="" class="list-link">At, soluta.</a></li>
+                                            <li><a href="" class="list-link">Neque, error.</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/menu-product-3-118x118.jpg">
+                                        <h6 class="text-uppercase  mt-4"><strong>Tabletop</strong></h6>
+                                        <ul class="lh-lg ps-0" style="list-style: none;">
+                                            <li><a href="" class="list-link">Lorem, ipsum.</a></li>
+                                            <li><a href="" class="list-link">Inventore, dicta!</a></li>
+                                            <li><a href="" class="list-link">Corrupti, quasi?</a></li>
+                                            <li><a href="" class="list-link">Quaerat, voluptate.</a></li>
+                                            <li><a href="" class="list-link">Ratione, aperiam.</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/menu-product-3-2-118x118.jpg">
+                                        <h6 class="text-uppercase  mt-4"><strong>Kitchen</strong></h6>
+                                        <ul class="lh-lg ps-0" style="list-style: none;">
+                                            <li><a href="" class="list-link">Lorem, ipsum.</a></li>
+                                            <li><a href="" class="list-link">Labore, sint.</a></li>
+                                            <li><a href="" class="list-link">Commodi, porro?</a></li>
+                                            <li><a href="" class="list-link">Repellat, vel!</a></li>
+                                            <li><a href="" class="list-link">Delectus, architecto.</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/menu-product-5-2-118x118.jpg">
+                                        <h6 class="text-uppercase  mt-4"><strong>Lighting</strong></h6>
+                                        <ul class="lh-lg ps-0" style="list-style: none;">
+                                            <li><a href="" class="list-link">Lorem, ipsum.</a></li>
+                                            <li><a href="" class="list-link">Ullam, molestiae!</a></li>
+                                            <li><a href="" class="list-link">Cupiditate, voluptates?</a></li>
+                                            <li><a href="" class="list-link">Hic, consequatur.</a></li>
+                                            <li><a href="" class="list-link">Aliquid, modi!</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row m-0 bg-light p-4 ">
+                                    <div class="col">
+                                        <a title="Alessi" href="#">
+                                            <img class="img-color-hover" src="https://woodmart.xtemos.com/wp-content/uploads/2016/09/brand-alessi.png">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a title="Alessi" href="#">
+                                            <img class="img-color-hover" src="https://woodmart.xtemos.com/wp-content/uploads/2016/09/brand-Eva-Solo.png">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a title="Alessi" href="#">
+                                            <img class="img-color-hover" src="https://woodmart.xtemos.com/wp-content/uploads/2016/09/brand-PackIt.png">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a title="Alessi" href="#">
+                                            <img class="img-color-hover" src="https://woodmart.xtemos.com/wp-content/uploads/2016/09/brand-witra.png">
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="left-menu-item h-100">
+                            <i class="fa-solid fa-fire-burner"></i>
+                            <a class="dropdown-item" aria-current="page" href="#">Cooking</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="left-menu-item h-100">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <a class="dropdown-item" aria-current="page" href="#">Accessories</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="left-menu-item h-100">
+                            <i class="fa-solid fa-chair"></i>
+                            <a class="dropdown-item" aria-current="page" href="#">Fashion</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="left-menu-item h-100">
+                            <i class="fa-solid fa-shirt"></i>
+                            <a class="dropdown-item" aria-current="page" href="#">Clocks</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="left-menu-item h-100">
+                            <i class="fa-regular fa-lightbulb"></i>
+                            <a class="dropdown-item" aria-current="page" href="#">Lighting</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="left-menu-item h-100">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <a class="dropdown-item" aria-current="page" href="#">Toys</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="left-menu-item h-100">
+                            <i class="fa-solid fa-hands-praying"></i>
+                            <a class="dropdown-item" aria-current="page" href="#">Hand Made</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="left-menu-item h-100">
+                            <i class="fa-solid  fa-down-left-and-up-right-to-center"></i>
+                            <a class="dropdown-item" aria-current="page" href="#">Minimalism</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="left-menu-item h-100">
+                            <i class="fa-solid fa-plug"></i>
+                            <a class="dropdown-item" aria-current="page" href="#">Electronics</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="left-menu-item h-100">
+                            <i class="fa-solid fa-car"></i>
+                            <a class="dropdown-item" aria-current="page" href="#">Cars</a>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            
+            <!-- Middle Area - Navigation -->
+            <div class="col navbar navbar-expand p-0">
+                <ul class="navbar-nav ms-2 h-100">
+                  <li class="nav-item active subnav">
+                    <a class="nav-link active subnav-link" aria-current="page" href="#">HOME</a>
+                    <div class="subnav-container-fluid border-bottom border-top m-0">
+                        <div class="container-lg py-4">
+                            <div class="row">
+                                <div class="col">
+                                    <a class="nav-link text-center p-0" href="">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/default.jpg" class="img-thumbnail">
+                                        <p class="mt-2 fs-5"><strong>Demo Default</strong></p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="nav-link text-center" href="">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2023/02/demo-mega-electronics.jpg" class="img-thumbnail">
+                                        <p class="mt-2 fs-5"><strong>Demo Default</strong></p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="nav-link text-center" href="">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/default.jpg" class="img-thumbnail">
+                                        <p class="mt-2 fs-5"><strong>Demo Default</strong></p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="nav-link text-center" href="">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2023/02/demo-mega-electronics.jpg" class="img-thumbnail">
+                                        <p class="mt-2 fs-5"><strong>Demo Default</strong></p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="nav-link text-center" href="">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/default.jpg" class="img-thumbnail">
+                                        <p class="mt-2 fs-5"><strong>Demo Default</strong></p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <a class="nav-link text-center" href="">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2023/02/demo-mega-electronics.jpg" class="img-thumbnail">
+                                        <p class="mt-2 fs-5"><strong>Demo Default</strong></p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="nav-link text-center" href="">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/default.jpg" class="img-thumbnail">
+                                        <p class="mt-2 fs-5"><strong>Demo Default</strong></p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="nav-link text-center" href="">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2023/02/demo-mega-electronics.jpg" class="img-thumbnail">
+                                        <p class="mt-2 fs-5"><strong>Demo Default</strong></p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="nav-link text-center" href="">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/default.jpg" class="img-thumbnail">
+                                        <p class="mt-2 fs-5"><strong>Demo Default</strong></p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="nav-link text-center" href="">
+                                        <img src="https://woodmart.xtemos.com/wp-content/uploads/2023/02/demo-mega-electronics.jpg" class="img-thumbnail">
+                                        <p class="mt-2 fs-5"><strong>Demo Default</strong></p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-3 align-items-center mx-auto">
+                                    <button type="button" class="btn btn-primary text-light btn-lg rounded-0 px-4 py-2 my-4">View All Demos (75)</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="nav-item subnav m-0">
+                    <a class="nav-link subnav-link" aria-current="page" href="#">SHOP</a>
+                    <div class="subnav-container-fluid border-bottom border-top m-0">
+                        <div class="container-lg" style="height: 495px;">
+                            <div class="row m-0">
+                                <!-- Tab Nav Menu - (Vertical) -->
+                                <div id="TabNavMenu" class="col m-0 p-0" style="max-width: 270px;">
+                                    <ul class="nav flex-column nav-tabs bg-primary w-100" style="height: 495px;">
+                                        <li class="nav-item active">
+                                            <a class="nav-link active ps-3" data-toggle="tab" aria-current="page" href="#tabnav-menu-1">Shop Pages
+                                                <i class="fa-solid fa-chevron-right ms-auto small"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link ps-3" aria-current="page" href="#tabnav-menu-2">Product Loop
+                                              <i class="fa-solid fa-chevron-right ms-auto small"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link ps-3" data-toggle="tab" aria-current="page" href="#tabnav-menu-3">Single Product
+                                                <i class="fa-solid fa-chevron-right ms-auto small"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link ps-3" aria-current="page" href="#tabnav-menu-4">Features
+                                              <i class="fa-solid fa-chevron-right ms-auto small"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Tab Menu - Content -->
+                                <div id="TabNavMenu-Content" class="col tab-content">
+                                    <div id="tabnav-menu-1" class="tab-pane fade show active row"> 
+                                        <div class="row">
+                                            <div class="col ps-5">
+                                                <h6 class="text-uppercase"><strong>Lorem, ipsum dolor.</strong></h6>
+                                                <ul class="lh-lg ps-0" style="list-style: none;">
+                                                    <li><a class="list-link" href="">Lorem, ipsum dolor.</a></li>
+                                                    <li><a class="list-link" href="">Qui, corrupti reprehenderit.</a></li>
+                                                    <li><a class="list-link" href="">Cum, illo earum.</a></li>
+                                                    <li><a class="list-link" href="">A, perferendis aliquid!</a></li>
+                                                    <li><a class="list-link" href="">Illo, architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestias enim?</a></li>
+                                                    <li><a class="list-link" href="">Illo, architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestias enim?</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col ps-5">
+                                                <h6 class="text-uppercase"><strong>
+                                                    Itaque, reiciendis mollitia.</strong></h6>
+                                                <ul class="lh-lg ps-0" style="list-style: none;">
+                                                    <li><a class="list-link" href="">Lorem, ipsum dolor.</a></li>
+                                                    <li><a class="list-link" href="">Qui, corrupti reprehenderit.</a></li>
+                                                    <li><a class="list-link" href="">Cum, illo earum.</a></li>
+                                                    <li><a class="list-link" href="">A, perferendis aliquid!</a></li>
+                                                    <li><a class="list-link" href="">Illo, architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestias enim?</a></li>
+                                                    <li><a class="list-link" href="">Illo, architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestias enim?</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col ps-5">
+                                                <h6 class="text-uppercase"><strong>
+                                                    Sunt, alias sint.</strong></h6>
+                                                <ul class="lh-lg ps-0" style="list-style: none;">
+                                                    <li><a class="list-link" href="">Lorem, ipsum dolor.</a></li>
+                                                    <li><a class="list-link" href="">Qui, corrupti reprehenderit.</a></li>
+                                                    <li><a class="list-link" href="">Cum, illo earum.</a></li>
+                                                    <li><a class="list-link" href="">A, perferendis aliquid!</a></li>
+                                                    <li><a class="list-link" href="">Illo, architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestias enim?</a></li>
+                                                    <li><a class="list-link" href="">Illo, architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestias enim?</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tabnav-menu-2" class="tab-pane fade"> 
+                                        <div class="row">
+                                            <div class="col ps-5">
+                                                <h6 class="text-uppercase"><strong>Nemo, ducimus.</strong></h6>
+                                                <ul class="lh-lg ps-0" style="list-style: none;">
+                                                    <li><a class="list-link" href=""> ipsum dolor.</a></li>
+                                                    <li><a class="list-link" href="">orrupti reprehenderit.</a></li>
+                                                    <li><a class="list-link" href="">llo earum.</a></li>
+                                                    <li><a class="list-link" href="">ferendis aliquid!</a></li>
+                                                    <li><a class="list-link" href="">architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">serunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">t, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">, molestias enim?</a></li>
+                                                    <li><a class="list-link" href="">architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">serunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">t, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">, molestias enim?</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col ps-5">
+                                                <h6 class="text-uppercase"><strong>
+                                                    Voluptate, laboriosam!</strong></h6>
+                                                <ul class="lh-lg ps-0" style="list-style: none;">
+                                                    <li><a class="list-link" href="">Lorem, ipslor.</a></li>
+                                                    <li><a class="list-link" href="">Qui, corrueprehenderit.</a></li>
+                                                    <li><a class="list-link" href="">Cum, illo .</a></li>
+                                                    <li><a class="list-link" href="">A, perferealiquid!</a></li>
+                                                    <li><a class="list-link" href="">Illo, archo assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserulam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, miae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, moas enim?</a></li>
+                                                    <li><a class="list-link" href="">Illo, archo assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserulam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, miae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, moas enim?</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col ps-5">
+                                                <h6 class="text-uppercase"><strong>
+                                                    Asperiores, esse?</strong></h6>
+                                                <ul class="lh-lg ps-0" style="list-style: none;">
+                                                    <li><a class="list-link" href="">Lorem, ipsum dlor.</a></li>
+                                                    <li><a class="list-link" href="">Qui, corrupti eprehenderit.</a></li>
+                                                    <li><a class="list-link" href="">Cum, illo earu.</a></li>
+                                                    <li><a class="list-link" href="">A, perferendisaliquid!</a></li>
+                                                    <li><a class="list-link" href="">Illo, architeco assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ulam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molesiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestas enim?</a></li>
+                                                    <li><a class="list-link" href="">Illo, architeco assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ulam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molesiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestas enim?</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tabnav-menu-3" class="tab-pane fade"> 
+                                        <div class="row">
+                                            <div class="col ps-5">
+                                                <h6 class="text-uppercase"><strong>Lorem, ipsum dolor.</strong></h6>
+                                                <ul class="lh-lg ps-0" style="list-style: none;">
+                                                    <li><a class="list-link" href="">Lorem, ipsum dolor.</a></li>
+                                                    <li><a class="list-link" href="">Qui, corrupti reprehenderit.</a></li>
+                                                    <li><a class="list-link" href="">Cum, illo earum.</a></li>
+                                                    <li><a class="list-link" href="">A, perferendis aliquid!</a></li>
+                                                    <li><a class="list-link" href="">Illo, architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestias enim?</a></li>
+                                                    <li><a class="list-link" href="">Illo, architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestias enim?</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col ps-5">
+                                                <h6 class="text-uppercase"><strong>
+                                                    Itaque, reiciendis mollitia.</strong></h6>
+                                                <ul class="lh-lg ps-0" style="list-style: none;">
+                                                    <li><a class="list-link" href="">Lorem, ipsum dolor.</a></li>
+                                                    <li><a class="list-link" href="">Qui, corrupti reprehenderit.</a></li>
+                                                    <li><a class="list-link" href="">Cum, illo earum.</a></li>
+                                                    <li><a class="list-link" href="">A, perferendis aliquid!</a></li>
+                                                    <li><a class="list-link" href="">Illo, architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestias enim?</a></li>
+                                                    <li><a class="list-link" href="">Illo, architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestias enim?</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col ps-5">
+                                                <h6 class="text-uppercase"><strong>
+                                                    Sunt, alias sint.</strong></h6>
+                                                <ul class="lh-lg ps-0" style="list-style: none;">
+                                                    <li><a class="list-link" href="">Lorem, ipsum dolor.</a></li>
+                                                    <li><a class="list-link" href="">Qui, corrupti reprehenderit.</a></li>
+                                                    <li><a class="list-link" href="">Cum, illo earum.</a></li>
+                                                    <li><a class="list-link" href="">A, perferendis aliquid!</a></li>
+                                                    <li><a class="list-link" href="">Illo, architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestias enim?</a></li>
+                                                    <li><a class="list-link" href="">Illo, architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestias enim?</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tabnav-menu-4" class="tab-pane fade"> 
+                                        <div class="row">
+                                            <div class="col ps-5">
+                                                <h6 class="text-uppercase"><strong>Nemo, ducimus.</strong></h6>
+                                                <ul class="lh-lg ps-0" style="list-style: none;">
+                                                    <li><a class="list-link" href=""> ipsum dolor.</a></li>
+                                                    <li><a class="list-link" href="">orrupti reprehenderit.</a></li>
+                                                    <li><a class="list-link" href="">llo earum.</a></li>
+                                                    <li><a class="list-link" href="">ferendis aliquid!</a></li>
+                                                    <li><a class="list-link" href="">architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">serunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">t, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">, molestias enim?</a></li>
+                                                    <li><a class="list-link" href="">architecto assumenda?</a></li>
+                                                    <li><a class="list-link" href="">serunt ullam?</a></li>
+                                                    <li><a class="list-link" href="">t, molestiae earum.</a></li>
+                                                    <li><a class="list-link" href="">, molestias enim?</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col ps-5">
+                                                <h6 class="text-uppercase"><strong>
+                                                    Voluptate, laboriosam!</strong></h6>
+                                                <ul class="lh-lg ps-0" style="list-style: none;">
+                                                    <li><a class="list-link" href="">Lorem, ipslor.</a></li>
+                                                    <li><a class="list-link" href="">Qui, corrueprehenderit.</a></li>
+                                                    <li><a class="list-link" href="">Cum, illo .</a></li>
+                                                    <li><a class="list-link" href="">A, perferealiquid!</a></li>
+                                                    <li><a class="list-link" href="">Illo, archo assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserulam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, miae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, moas enim?</a></li>
+                                                    <li><a class="list-link" href="">Illo, archo assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserulam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, miae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, moas enim?</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col ps-5">
+                                                <h6 class="text-uppercase"><strong>
+                                                    Asperiores, esse?</strong></h6>
+                                                <ul class="lh-lg ps-0" style="list-style: none;">
+                                                    <li><a class="list-link" href="">Lorem, ipsum dlor.</a></li>
+                                                    <li><a class="list-link" href="">Qui, corrupti eprehenderit.</a></li>
+                                                    <li><a class="list-link" href="">Cum, illo earu.</a></li>
+                                                    <li><a class="list-link" href="">A, perferendisaliquid!</a></li>
+                                                    <li><a class="list-link" href="">Illo, architeco assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ulam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molesiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestas enim?</a></li>
+                                                    <li><a class="list-link" href="">Illo, architeco assumenda?</a></li>
+                                                    <li><a class="list-link" href="">Ex, deserunt ulam?</a></li>
+                                                    <li><a class="list-link" href="">Placeat, molesiae earum.</a></li>
+                                                    <li><a class="list-link" href="">Beatae, molestas enim?</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link subnav-link" href="#">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link subnav-link" href="#">PAGES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link subnav-link" href="#">ELEMENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link subnav-link" href="#">BUY</a>
+                  </li>
+                </ul>
+            </div>
+            
+            
+            <!-- Right Area -->
+            <div class="col navbar navbar-expand">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active link-" href="#">SPECIAL OFFER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PURCHASE THEME</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+          
+            
+        </div>
+        
+
+        
+
+    </div><!-- Header - Bottom - End -->
+
+    
+    <!-- Carousel - Start -->
+    <!-- <div id="carouselExampleIndicators" class="carousel slide carousel-fade" style="height: 490px; background-color: #f8f8f8"> -->
+    <div id="carouselIndicators" class="carousel slide carousel-fade" style="height: min(60vw, 495px); background-color: #f8f8f8">
+
+        <!-- Carousel Nav Dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel Content -->
+        <div class="carousel-inner container-lg py-4 h-100" style="font-size: 1vw; ">
+          <div class="carousel-item active position-relative h-100">
+            <div class="row h-100">
+                <!-- Menu Shadow Space -->
+                <div class="col d-none d-lg-block" style="max-width: 275px;"></div>
+
+                <!-- Slider -->
+                <div class="col h-100 w-50">
+                    <div class="d-flex" style="font-size: 1em;">
+                        <div class="carousel-text-container pt-2 pt-lg-5 ps-3 ps-sm-5 h-10" style=" z-index: 11;">
+                            <h1 class="text-body-secondary fw-bold" style="font-size: min(8dvw, 4rem);">Simple -</h1>
+                            <h1 class="text-body-secondary fw-bold" style="font-size: min(8dvw, 4rem);">Rock Chair.</h1>
+                            <p class="text-secondary lead text-wrap" style="font-size: min(2.4dvw, 1.2rem); width: 20em;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci ducimus itaque modi.</p>
+                            
+                            <!-- Tab Nav Carousel - (Vertical) -->
+                            <div id="TabNavCarousel" class="col m-0 p-0">
+                                <ul class="nav nav-tabs-carousel">
+                                    <li class="nav-item active">
+                                        <a class="nav-link active p-1" data-toggle="tab" aria-current="page" href="#tabnav-Carousel-1">
+                                            <img src="//a6n4d3q9.rocketcdn.me/wp-content/uploads/2017/01/swatch-main-demo-1.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-1" aria-current="page" href="#tabnav-Carousel-2">
+                                            <img src="//a6n4d3q9.rocketcdn.me/wp-content/uploads/2017/01/swatch-main-demo-1-2.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-1" aria-current="page" href="#tabnav-Carousel-3">
+                                            <img src="//a6n4d3q9.rocketcdn.me/wp-content/uploads/2017/01/swatch-main-demo-1-3.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-1" aria-current="page" href="#tabnav-Carousel-4">
+                                            <img src="//a6n4d3q9.rocketcdn.me/wp-content/uploads/2017/01/swatch-main-demo-1-4.jpg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <h1 class="text-body-secondary py-3">₺1999.00</h1>
+                        </div>
+                        <div class="h-100 w-100 ">
+                            <!-- Tab Carousel - Content -->
+                            <div id="TabNavCarousel-Content" class="col tab-content">
+                                <div id="tabnav-Carousel-1" class="tab-pane fade show active row"> 
+                                    <img class="float-end pt-1 pt-lg-4"
+                                         src="//a6n4d3q9.rocketcdn.me/wp-content/uploads/2017/01/slider-main-demo-1.jpg" 
+                                         style="position: absolute;
+                                                right: -70px;
+                                                z-index: 10;
+                                                width: 58%;">
+                                </div>
+                                <div id="tabnav-Carousel-2" class="tab-pane fade show row"> 
+                                    <img class="float-end pt-1 pt-lg-4"
+                                         src="//a6n4d3q9.rocketcdn.me/wp-content/uploads/2017/01/slider-main-demo-1-2.jpg"
+                                         style="position: absolute;
+                                                right: -70px;
+                                                z-index: 10;
+                                                width: 58%;">
+                                </div>
+                                <div id="tabnav-Carousel-3" class="tab-pane fade show row"> 
+                                    <img class="float-end pt-1 pt-lg-4"
+                                         src="//a6n4d3q9.rocketcdn.me/wp-content/uploads/2017/01/slider-main-demo-1-3.jpg"
+                                         style="position: absolute;
+                                                right: -70px;
+                                                z-index: 10;
+                                                width: 58%;">
+                                </div>
+                                <div id="tabnav-Carousel-4" class="tab-pane fade show row"> 
+                                    <img class="float-end pt-1 pt-lg-4"
+                                         src="//a6n4d3q9.rocketcdn.me/wp-content/uploads/2017/01/slider-main-demo-1-4.jpg"
+                                         style="position: absolute;
+                                                right: -70px;
+                                                z-index: 10;
+                                                width: 58%;">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item position-relative h-100">
+            <div class="row h-100">
+                <!-- Menu Shadow Space -->
+                <div class="col d-none d-lg-block" style="max-width: 275px;"></div>
+
+                <!-- Slider -->
+                <div class="col h-100 w-50">
+                    <div class="d-flex text-center h-100 align-items-center" style="font-size: 1em;">
+                        <div class="carousel-text-container pt-2 pt-lg-4 ps-3 ps-sm-5 h-10" style="z-index: 11;">
+                            <p class="lead fw-bold opacity-50 m-0" style="font-size: min(2.4dvw, 1.2rem);">CAPELLINI</p>
+                            <h1 class="text-body-secondary fw-bold m-0" style="font-size: min(5dvw, 4rem);">Wooden</h1>
+                            <h1 class="text-body-secondary fw-bold" style="font-size: min(5dvw, 4rem);">Lounge Chairs</h1>
+                            <p class="text-secondary lead text-wrap" style="font-size: min(2.4dvw, 1.2rem); width: 24em;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci ducimus .</p>
+                            
+                            <h1 class="text-primary">₺3999.00</h1>
+                        </div>
+                        <div class="h-100 w-100 ">
+                            <img class="float-end"
+                                 src="//a6n4d3q9.rocketcdn.me/wp-content/uploads/2017/01/slider-main-demo-3.jpg" 
+                                 style="position: absolute;
+                                        right: -120px;
+                                        z-index: 10;
+                                        width: 58%;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item position-relative h-100">
+                <h1 class="text-center h-100">TEST</h1>
+          </div>
+        </div>
+        
+        <!-- Carousel Nav Buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> <!-- Carousel - End -->
+    <!-- Header - End -->
+
+    <!-- Content - Start -->
+    <h6 class="text-center pt-5 opacity-25">WOODMART COLLECTIONS</h6>
+    <h3 class="text-center pt-2 text-body-secondary fw-bold">FEATURED CATEGORIES</h3>
+    <p class="text-center pt-2 text-body-secondary opacity-75">WoodMart is a powerful eCommerce theme for WordPress.</p>
+    <!-- Content - End -->
+    
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/hover-tabs.js"></script>
+    
+  </body>
+</html>
